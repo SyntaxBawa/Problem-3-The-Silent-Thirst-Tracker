@@ -3,3 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #dff6ff, #b8e8fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px
+}
+
+
+
