@@ -13,6 +13,33 @@ body {
     min-height: 100vh;
     padding: 20px
 }
+.container {
+    background: white;
+    width: 400px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.goal-section input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #90e0ef;
+    border-radius: 10px;
+    outline: none;
+}
 
+.goal-section button {
+    background: #00b4d8;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.goal-section button:hover {
+    background: #0096c7;
+}
 
 
