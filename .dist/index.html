@@ -8,21 +8,22 @@
 </head>
 <body>
 
-    <h1>💧 Water Tracker</h1>
+    <div class="container">
+        <h1>💧 Water Tracker</h1>
 
-<input type="number" id="goal" placeholder="Set goal (ml)">
-<button onclick="setGoal()">Set Goal</button>
-
-   <!-- Goal Input -->
-    <div class="goal-section">
-      <input type="number" id="goalInput" placeholder="Enter goal (ml)">
-      <button id="setGoalBtn">Set Goal</button>
-    </div>
+        <!-- Goal Input -->
+        <div class="goal-section">
+            <input type="number" id="goalInput" placeholder="Enter goal (ml)">
+            <button id="setGoalBtn">Set Goal</button>
+        </div>
     
-    <!-- Progress Bar -->
-    <div class="progress-bar">
-      <div id="progress"></div>
-    </div>
+    <!-- Progress Circle -->
+        <div class="progress-box">
+            <div class="progress-circle">
+                <span id="progressText">0%</span>
+            </div>
+        </div>
+
 
     <!-- Status -->
     <p id="status">0ml / 0ml</p>
@@ -33,10 +34,12 @@
       <button id="add500">+500ml</button>
     </div>
 
-    <!-- Reset -->
-    <button id="resetBtn">Reset</button>
-  </div>
+   <!-- Message -->
+        <p id="message">Stay hydrated 💙</p>
 
+        <!-- Reset -->
+        <button class="reset" id="resetBtn">Reset</button>
+    </div>
 
 </body>    
 </html>

@@ -21,6 +21,18 @@ body {
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     text-align: center;
 }
+
+h1 {
+    margin-bottom: 20px;
+    color: #0077b6;
+}
+
+.goal-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
 .goal-section input {
     flex: 1;
     padding: 12px;
@@ -41,10 +53,3 @@ body {
 .goal-section button:hover {
     background: #0096c7;
 }
-.progress-box {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-}
-
-
