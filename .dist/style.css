@@ -53,3 +53,21 @@ h1 {
 .goal-section button:hover {
     background: #0096c7;
 }
+
+.progress-box {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.progress-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: conic-gradient(#00b4d8 0deg, #caf0f8 0deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
