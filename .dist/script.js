@@ -49,3 +49,28 @@ setGoalBtn.addEventListener("click", function () {
     updateUI();
 });
 
+// Add Water Function
+function addWater(amount) {
+
+    if (dailyGoal === 0) {
+        alert("Set your daily goal first.");
+        return;
+    }
+
+    currentWater += amount;
+
+    // Save Current Water
+    localStorage.setItem("currentWater", currentWater);
+
+    updateUI();
+}
+
+// Quick Add Buttons
+add250.addEventListener("click", function () {
+    addWater(250);
+});
+
+add500.addEventListener("click", function () {
+    addWater(500);
+});
+
