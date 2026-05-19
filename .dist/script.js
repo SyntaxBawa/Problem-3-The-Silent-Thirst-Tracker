@@ -17,3 +17,18 @@ const progressCircle = document.querySelector(".progress-circle");
 
 const resetBtn = document.getElementById("resetBtn");
 
+// Load Saved Data
+window.onload = function () {
+    const savedGoal = localStorage.getItem("dailyGoal");
+    const savedWater = localStorage.getItem("currentWater");
+
+    if (savedGoal) {
+        dailyGoal = parseInt(savedGoal);
+    }
+
+    if (savedWater) {
+        currentWater = parseInt(savedWater);
+    }
+
+    updateUI();
+};
