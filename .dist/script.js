@@ -74,3 +74,14 @@ add500.addEventListener("click", function () {
     addWater(500);
 });
 
+// Update UI
+function updateUI() {
+
+    // Avoid division by zero
+    let percent = 0;
+
+    if (dailyGoal > 0) {
+        percent = Math.min((currentWater / dailyGoal) * 100, 100);
+    }
+}
+
