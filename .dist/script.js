@@ -83,5 +83,41 @@ function updateUI() {
     if (dailyGoal > 0) {
         percent = Math.min((currentWater / dailyGoal) * 100, 100);
     }
+
+    // Update Progress Text
+    progressText.textContent = `${Math.floor(percent)}%`;
+
+    // Update Status
+    statusText.textContent = `${currentWater}ml / ${dailyGoal}ml`;
+
+    // Update Progress Circle
+    let degrees = (percent / 100) * 360;
+
+    progressCircle.style.background =
+        `conic-gradient(#00b4d8 ${degrees}deg, #caf0f8 ${degrees}deg)`;
+
+    // Remaining Water
+    let remaining = dailyGoal - currentWater;
+
+    if (remaining > 0) {
+        message.textContent =
+            `You need ${remaining}ml more to reach your goal💦`;
+    } else {
+        message.textContent =
+            "Congratulations! You reached your daily goal!";
+    }
 }
+
+// Reset Button
+resetBtn.addEventListener("click", function () {
+
+    currentWater = 0;
+
+    localStorage.setItem("currentWater", currentWater);
+
+    updateUI();
+});
+
+
+
 
