@@ -104,7 +104,7 @@ function updateUI() {
             `You need ${remaining}ml more to reach your goal💦`;
     } else {
         message.textContent =
-            "Congratulations! You reached your daily goal!";
+            "Congratulations🎉You reached your daily goal!";
     }
 }
 
@@ -117,6 +117,8 @@ resetBtn.addEventListener("click", function () {
 
     updateUI();
 });
+
+
 
 
 
