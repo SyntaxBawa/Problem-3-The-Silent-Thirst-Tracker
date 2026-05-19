@@ -32,3 +32,20 @@ window.onload = function () {
 
     updateUI();
 };
+
+// Set Goal
+setGoalBtn.addEventListener("click", function () {
+
+    if (goalInput.value === "" || goalInput.value <= 0) {
+        alert("Please enter a valid goal.");
+        return;
+    }
+
+    dailyGoal = parseInt(goalInput.value);
+
+    // Save Goal
+    localStorage.setItem("dailyGoal", dailyGoal);
+
+    updateUI();
+});
+
